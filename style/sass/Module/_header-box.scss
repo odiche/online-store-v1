@@ -1,0 +1,70 @@
+
+.header{
+
+    &__box {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(34, 33, 33);
+        // box-shadow: 2px 2px 4px rgba(68, 68, 68, 0.757);
+        padding: 1rem 0rem;
+
+        @include phone{
+            flex-direction: column;
+            padding: 2rem 0;
+        }
+    }
+
+    &__icons{
+        i {
+            color: #fff;
+            font-size: 2rem;
+            margin-right: 2rem;
+        }
+    }
+}
+
+
+// .header__icons {
+//     i {
+//         color: #fff;
+//         font-size: 2rem;
+//         margin-right: 2rem;
+//     }
+// }
+
+.header__form {
+    input {
+        border: none;
+        border-radius: 10px;
+        padding: .5rem 2rem;
+        text-align: center;
+
+        @include phone{
+            margin: 1.2rem 0;
+        }
+    }
+}
+
+// .header__buttons {
+//     a {
+//         text-decoration: none;
+//         color: #000;
+//         margin-right: .7rem;
+//     }
+
+   
+// }
+
+// .header__border{
+//     border: 1px solid #fff;
+// }
+
+// .header__solid{
+//     background-color: #fff;
+// }
+
+// .header__btn{
+//     padding: .7rem 1rem;
+//     border-radius: 2px;
+// }

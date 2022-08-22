@@ -1,0 +1,28 @@
+.header{
+    background-image:linear-gradient(rgba(26, 25, 25, 0.493), rgba(209, 22, 22, 0.555)), url(./../images/cloths.jpg);
+    height: 100vh;
+    background-attachment: fixed;
+
+    &__hero-content{
+        width: 50%;
+        text-align: center;
+        padding: 1rem 0;
+        margin: 0 auto;
+        position: absolute;
+        left: 50%;
+        top: 60%;
+        transform: translate(-50%, -50%);
+    }
+
+    // &__title{
+    //     font-size: 3rem;
+    //     color: #fff;
+    // }
+
+    &__description{
+        font-size: 1.3rem;
+        color: #fff;
+        margin-bottom: 2.2rem;
+    }
+
+}

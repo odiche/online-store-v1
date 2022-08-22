@@ -1,0 +1,429 @@
+.nav {
+  background-color: #fff;
+  box-shadow: 2px 2px 4px  #555;
+  padding: .6rem 0; }
+  .nav__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto; }
+    @media only screen and (max-width: 630px) {
+      .nav__content {
+        flex-direction: column; } }
+  .nav__list {
+    display: flex;
+    list-style: none; }
+  .nav__item {
+    margin: 0 1.2rem; }
+  .nav__link {
+    text-decoration: none; }
+
+.logo {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%; }
+
+.header__box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #222121;
+  padding: 1rem 0rem; }
+  @media only screen and (max-width: 630px) {
+    .header__box {
+      flex-direction: column;
+      padding: 2rem 0; } }
+
+.header__icons i {
+  color: #fff;
+  font-size: 2rem;
+  margin-right: 2rem; }
+
+.header__form input {
+  border: none;
+  border-radius: 10px;
+  padding: .5rem 2rem;
+  text-align: center; }
+  @media only screen and (max-width: 630px) {
+    .header__form input {
+      margin: 1.2rem 0; } }
+
+.header {
+  background-image: linear-gradient(rgba(26, 25, 25, 0.493), rgba(209, 22, 22, 0.555)), url(./../images/cloths.jpg);
+  height: 100vh;
+  background-attachment: fixed; }
+  .header__hero-content {
+    width: 50%;
+    text-align: center;
+    padding: 1rem 0;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%); }
+  .header__description {
+    font-size: 1.3rem;
+    color: #fff;
+    margin-bottom: 2.2rem; }
+
+.about {
+  width: 80%;
+  margin: -4rem auto 0 auto;
+  background-color: #fff;
+  padding: 8rem 1rem; }
+  .about__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    @media only screen and (max-width: 630px) {
+      .about__content {
+        flex-direction: column; } }
+  .about__img {
+    height: 9rem;
+    width: 9rem; }
+    @media only screen and (max-width: 630px) {
+      .about__img {
+        margin-bottom: 4rem; } }
+
+.categories {
+  padding: 8rem 2rem; }
+  @media only screen and (max-width: 630px) {
+    .categories {
+      display: flex;
+      flex-direction: column; } }
+  .categories__right {
+    width: 25%;
+    height: 100%; }
+    @media only screen and (max-width: 630px) {
+      .categories__right {
+        width: 100%;
+        margin-top: 2rem; } }
+  .categories__left {
+    width: 75%;
+    height: 100%;
+    margin-right: 2rem; }
+    @media only screen and (max-width: 630px) {
+      .categories__left {
+        width: 100%; } }
+    .categories__left--botRow {
+      padding: 1rem 1.2rem; }
+      @media only screen and (max-width: 630px) {
+        .categories__left--botRow {
+          display: flex;
+          flex-direction: column;
+          align-items: center; } }
+    .categories__left--topRow {
+      justify-content: space-between;
+      margin-bottom: 2rem; }
+      @media only screen and (max-width: 630px) {
+        .categories__left--topRow {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 0 auto; } }
+
+.row {
+  display: flex; }
+
+.category {
+  box-shadow: 2px 2px 4px #555;
+  overflow: hidden;
+  position: relative;
+  padding: 0; }
+  .category__row {
+    width: 30%; }
+    @media only screen and (max-width: 630px) {
+      .category__row {
+        width: 80%;
+        margin: 2rem 0; } }
+  .category__col {
+    width: 100%;
+    margin-bottom: 1.2rem;
+    padding-bottom: 1rem; }
+  .category__img--container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    height: 100%;
+    width: 100%;
+    background-color: yellowgreen; }
+  .category__img {
+    width: 100%;
+    height: 100%;
+    opacity: .6; }
+  .category__text {
+    z-index: 999;
+    position: relative;
+    padding: .5rem 1rem 1rem 1rem;
+    text-align: center; }
+  .category__title {
+    font-size: 1.5rem; }
+    .category__title--orange {
+      color: orange; }
+    .category__title--yellow {
+      color: yellow; }
+  .category__description {
+    color: #fff; }
+  .category__rating {
+    margin-bottom: 2rem; }
+  .category__icon {
+    color: orange;
+    font-size: 1.2rem; }
+
+.category__content--text {
+  width: 60%;
+  padding: 1rem 2rem; }
+  @media only screen and (max-width: 630px) {
+    .category__content--text {
+      width: 80%; } }
+
+.bottomRow--img {
+  width: 20%;
+  margin-right: 2rem;
+  overflow: hidden; }
+  @media only screen and (max-width: 630px) {
+    .bottomRow--img {
+      width: 80%; } }
+
+.noOpacity {
+  opacity: 1; }
+
+.history {
+  padding: 1rem 2rem 1rem 0; }
+  .history__content {
+    display: flex; }
+  .history__img--container {
+    margin-right: 2rem;
+    width: 50%;
+    background-image: url(./../images/nike4.jpg);
+    background-attachment: fixed;
+    clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%); }
+  .history__text {
+    width: 50%; }
+  .history__title {
+    font-size: 1.6rem;
+    margin-top: 0; }
+  .history__desc {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: #999;
+    margin-bottom: 2rem; }
+
+.finish {
+  height: 20rem; }
+
+.reviews {
+  padding: 8rem 4rem;
+  border: 1px solid #777;
+  box-shadow: 2px 2px 4px #999;
+  margin-top: 3rem; }
+  .reviews__content {
+    display: flex;
+    flex-wrap: wrap; }
+    @media only screen and (max-width: 630px) {
+      .reviews__content {
+        flex-direction: column; } }
+
+.review {
+  border: 1px solid #777;
+  width: 40%;
+  padding: .7rem 1rem;
+  margin: .5rem;
+  box-sizing: border-box; }
+  @media only screen and (max-width: 630px) {
+    .review {
+      width: 100%; } }
+  .review__user {
+    display: flex;
+    align-items: center; }
+  .review__img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin-right: 1rem; }
+  .review__title {
+    margin: 0 0 .4rem 0;
+    color: #999;
+    font-weight: 200;
+    font-size: 1.1rem; }
+  .review__location {
+    margin: 0; }
+  .review__icon {
+    color: #999;
+    font-size: 1.1rem; }
+  .review__text {
+    font-size: 1.1rem;
+    color: #999;
+    line-height: 1.2rem; }
+
+.products {
+  padding: 8rem 2rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.541), rgba(0, 0, 0, 0.596)), url(./../images/20220630_072918.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  .products__content {
+    display: flex;
+    justify-content: space-around; }
+    @media only screen and (max-width: 630px) {
+      .products__content {
+        flex-direction: column;
+        align-items: center; } }
+
+.product {
+  width: 20%;
+  box-shadow: 2px 2px 4px #000; }
+  @media only screen and (max-width: 630px) {
+    .product {
+      width: 80%;
+      margin: 1rem 0; } }
+  .product__img--container {
+    width: 100%;
+    height: 12rem; }
+  .product__img {
+    width: 100%;
+    height: 100%; }
+  .product__text {
+    padding: 1rem 1rem 3rem 1rem;
+    background-color: #fff;
+    position: relative; }
+  .product__title {
+    color: #999;
+    margin: 0; }
+  .product__author {
+    font-size: .7rem;
+    margin-top: .4rem;
+    color: green; }
+  .product__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .product__price {
+    font-weight: bold; }
+  .product__icon {
+    color: purple; }
+
+.email {
+  background-color: #999;
+  padding: 8rem 0; }
+  .email__content {
+    width: 70%;
+    background-color: #777;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    box-shadow: 2px 2px 4px #000;
+    border-radius: 5px; }
+    @media only screen and (max-width: 630px) {
+      .email__content {
+        padding: 2rem 0; } }
+    .email__content--info {
+      width: 70%;
+      background-color: #fff;
+      padding: 4rem 2rem;
+      margin: 0 auto;
+      box-shadow: 2px 2px 4px #000;
+      border-radius: 5px; }
+      @media only screen and (max-width: 630px) {
+        .email__content--info {
+          padding: 2rem 0; } }
+  .email__title {
+    color: #999;
+    font-size: 2rem;
+    text-align: center; }
+    @media only screen and (max-width: 630px) {
+      .email__title {
+        font-size: 1rem; } }
+  .email__form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto; }
+  .email__input {
+    margin-bottom: 1.2rem;
+    padding: .8rem 1rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.836);
+    border: none;
+    border-radius: 5px; }
+
+.footer {
+  padding: 4rem;
+  background-color: rgba(153, 153, 153, 0.384);
+  border-top: 1px solid rgba(0, 0, 0, 0.418);
+  display: flex;
+  justify-content: space-around; }
+  @media only screen and (max-width: 630px) {
+    .footer {
+      flex-direction: column;
+      align-items: center; } }
+  .footer__list {
+    list-style: none; }
+  .footer__item {
+    margin: .5rem 0; }
+  .footer__link {
+    text-decoration: none;
+    color: #fff; }
+
+.header__link {
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+  padding: 0.8rem 2rem;
+  border-radius: 4px; }
+
+.header__border {
+  border: 1px solid #fff;
+  background-color: #504747; }
+
+.header__solid {
+  background-color: #fff; }
+
+.header__btn {
+  padding: .7rem 1rem;
+  border-radius: 2px; }
+
+.header__buttons a {
+  text-decoration: none;
+  color: #000;
+  margin-right: .7rem; }
+
+.category__btn {
+  text-decoration: none;
+  color: black;
+  background-color: orange;
+  padding: .6rem 1rem; }
+
+.history__btn {
+  padding: .8rem 1rem;
+  text-decoration: none;
+  background-color: #fff;
+  box-shadow: 2px 2px 4px #000;
+  border-radius: 5px; }
+
+.product__btn {
+  color: red;
+  text-decoration: none;
+  padding: .5rem 1rem;
+  display: inline-block;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  border: 1px solid green; }
+
+.email__btn {
+  background-color: #fff;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.753);
+  border-radius: 10px;
+  border-color: rgba(119, 119, 119, 0.89);
+  padding: .7rem 1rem;
+  width: 10rem;
+  margin: 0 auto; }
+
+.header__title {
+  font-size: 3rem;
+  color: #fff; }
+  @media only screen and (max-width: 630px) {
+    .header__title {
+      margin: 6rem 0 0 0;
+      font-size: 2rem; } }

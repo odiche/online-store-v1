@@ -1,0 +1,28 @@
+.about{
+    width: 80%;
+    margin: -4rem auto 0 auto;
+    background-color: #fff;
+    padding: 8rem 1rem;
+
+    &__content{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        @include phone{
+            flex-direction: column;
+        }
+    }
+
+    &__img{
+        height: 9rem;
+        width: 9rem;
+
+        @include phone{
+        margin-bottom: 4rem;
+        }
+    }
+}
+
+
+

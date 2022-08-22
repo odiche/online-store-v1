@@ -1,0 +1,21 @@
+{
+  "name": "online",
+  "version": "1.0.0",
+  "description": "shopping",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node-sass style/sass/style.scss style/index.css -w",
+    "prefix": "postcss style/index.css -u postcss-prefixer -o style/output.css"
+  },
+  "author": "odiche",
+  "license": "ISC",
+  "dependencies": {
+    "css-selector-tokenizer": "^0.8.0",
+    "node-sass": "^7.0.1",
+    "postcss": "^8.4.16"
+  },
+  "devDependencies": {
+    "postcss-cli": "^10.0.0",
+    "postcss-prefixer": "^2.1.3"
+  }
+}
