@@ -1,7 +1,10 @@
 .nav {
   background-color: #fff;
   box-shadow: 2px 2px 4px  #555;
-  padding: .6rem 0; }
+  padding: .6rem 0;
+  position: fixed;
+  width: 100%;
+  z-index: 9999; }
   .nav__content {
     display: flex;
     justify-content: space-between;
